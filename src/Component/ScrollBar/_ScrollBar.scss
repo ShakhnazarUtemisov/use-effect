@@ -1,0 +1,47 @@
+body { 
+    position: relative;
+    // width: 100%;
+    height: 300vh;
+	margin:0;
+	font-family: Arial;
+    font-weight: 700;
+}
+
+.scroll-bar {
+    position: fixed;
+    // width: 100%;
+    height: 100vh;
+    top: 30%;
+}
+svg circle {
+    stroke: #36383f;
+    stroke-width: 1px;
+}
+svg .progress {
+    stroke-width: 3px;
+    transition: .1s;
+    stroke: #00c23d;
+}
+
+.scroll-progress{
+    position: relative;
+    left: 300%;
+}
+
+.container {
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 90px;
+    width: 90px;
+}
+.container:after {
+    position: absolute;
+    left: 350%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: attr(data-scroll);
+    border-radius: 50%;
+    color: #36383f;
+}
+  

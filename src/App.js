@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.scss';
+import ToggleComponent from './Component/Toggle/Toggle';
+import RandomUser1 from './Component/RandomUser-1/RandomUser-1';
+import RandomUser2 from './Component/RandomUser-2/RandomUser-2';
+import ScrollBar from './Component/ScrollBar/ScrollBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ToggleComponent />
+      <RandomUser1 />
+      <RandomUser2 />
+      <ScrollBar />
     </div>
   );
 }

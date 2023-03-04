@@ -1,0 +1,43 @@
+.wrapper{
+
+    .items{
+
+        .comments{
+            width: 500px;
+        }
+
+        input{
+            position: relative;
+            width: 25px;
+            height: 25px;
+            appearance: none;
+            background-color: #ccc;
+            margin: 15px 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        input::before{
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+        }
+
+        input:nth-child(1)::before{
+            content: "1";
+        }
+
+        input:nth-child(2)::before{
+            content: "2";
+        }
+        
+        input:nth-child(3)::before{
+            content: "3";
+        }
+
+        input:checked{
+            background-color: green;
+        }
+    }
+}
